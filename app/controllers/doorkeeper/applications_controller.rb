@@ -11,6 +11,7 @@ module Doorkeeper
     end
 
     def show; end
+    def layout; end
 
     def new
       @application = Application.new
