@@ -1,6 +1,7 @@
 module Doorkeeper
   class ApplicationsController < Doorkeeper::ApplicationController
-    layout 'doorkeeper/admin'
+    #layout 'doorkeeper/admin'
+    layout nil
 
     before_action :authenticate_admin!
     before_action :set_application, only: %i[show edit update destroy]
